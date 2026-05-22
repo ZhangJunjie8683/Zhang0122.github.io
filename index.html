@@ -80,17 +80,7 @@ navbar_title: Home
     <div class="p-4">
         <div class="row align-items-center">
             <div class="col-md-5 text-center mb-3 mb-md-0">
-                <div style="padding: 20px 0;">
-                    <div style="font-size: 3.5rem; font-weight: 700; color: #333; line-height: 1;">
-                        <span id="busuanzi_value_site_pv">...</span>
-                    </div>
-                    <div class="text-muted mt-2" style="font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;">Total Pageviews</div>
-                    <hr style="width: 40%; margin: 12px auto;">
-                    <div style="font-size: 2rem; font-weight: 600; color: #555; line-height: 1;">
-                        <span id="busuanzi_value_site_uv">...</span>
-                    </div>
-                    <div class="text-muted mt-2" style="font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;">Unique Visitors</div>
-                </div>
+                <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=o2G3FzzbN9mJxdej2tpCUvpBO5YGGlXN4DoW6_wHPQw&cl=ffffff&w=a"></script>
             </div>
             <div class="col-md-7 pl-md-4">
                 <h5 class="font-weight-bold mb-2">Hello, World! 🌍</h5>
@@ -98,9 +88,14 @@ navbar_title: Home
                     Thanks for stopping by! Visitors from research institutions, universities, and tech communities around the world have explored this site.
                     If you're interested in collaborating or just want to say hi, feel free to reach out!
                 </p>
+                <p class="mb-2" style="font-size: 1rem;">
+                    <i class="fas fa-eye"></i> &nbsp;Total Pageviews: <span id="busuanzi_value_site_pv" style="font-weight: bold; color: #333;">...</span><br/>
+                    <i class="fas fa-user"></i> &nbsp;Unique Visitors: <span id="busuanzi_value_site_uv" style="font-weight: bold; color: #333;">...</span>
+                </p>
                 <p class="text-muted mb-2" style="font-size: 0.9rem;">
                     <i class="fas fa-university"></i> &nbsp;Texas A&amp;M University, College Station, TX<br/>
-                    <i class="fas fa-envelope"></i> &nbsp;zongrong@tamu.edu
+                    <i class="fas fa-envelope"></i> &nbsp;zongrong@tamu.edu<br/>
+                    <i class="fas fa-map-marker-alt"></i> &nbsp;Visitor locations tracked by <a href="https://clustrmaps.com" target="_blank">ClustrMaps</a>
                 </p>
             </div>
         </div>
