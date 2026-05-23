@@ -5,10 +5,6 @@ navbar_title: Home
 ---
 {% include widgets/profile_card.html %}
 
-{% include widgets/debug_repo_name.html %}
-
-{% include widgets/debug_url.html %}
-
 {% if site.data.display.homepage.show_experience %}
     {% include widgets/experience_card.html %}
 {% endif %}
@@ -54,17 +50,10 @@ navbar_title: Home
         <a href="{{ 'showcase' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
     </h6>
     <div class="p-3">
-        <div class="row grid mb-2">
-            <div class="grid-sizer col-1"></div>
-            {% for item in showcase_items %}
-            {%- if item.width >= 4 -%}{%- assign width_sm = 12 -%}{%- assign width_xs = 12 -%}
-            {%- elsif item.width >= 2 -%}{%- assign width_sm = 6 -%}{%- assign width_xs = 6 -%}
-            {%- else -%}{%- assign width_sm = item.width | times: 2 | at_most: 12 -%}{%- assign width_xs = item.width | times: 2 | at_most: 12 -%}
-            {%- endif -%}
-            <div class="p-2 grid-item col-md-{{ item.width | at_most: 12 }} col-sm-{{ width_sm }} col-{{ width_xs }}">
-                <div class="{% if item.class != null %}{{ item.class }}{% else %}card border-0 shadow-sm bg-white{% endif %}">
-                    {{ item.content }}
-                </div>
+        <div class="showcase-mosaic">
+            {% for item in showcase_items limit: 5 %}
+            <div class="showcase-mosaic-item{% if forloop.first %} showcase-mosaic-feature{% endif %}">
+                {{ item.content }}
             </div>
             {% endfor %}
         </div>

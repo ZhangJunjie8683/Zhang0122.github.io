@@ -4,7 +4,7 @@ date:           2025-02-05 00:01:00 +0800
 selected:       true
 #pub:            ""
 #pub_pre:        ""
-pub_post:       'Under review, International Journal of Applied Earth Observation and Geoinformation(JAG)'
+pub_post:       'International Journal of Applied Earth Observation and Geoinformation'
 #pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 pub_date:       "2025"
 
@@ -19,6 +19,6 @@ authors:
   - Yinxin Zhu
 
 links:
-  Paper: https://drive.google.com/file/d/1z7oZobtB36t6LWtz-iv53Df3mj1s-CvJ/view?usp=sharing
+  Paper: https://www.sciencedirect.com/science/article/pii/S156984322600258X
 #  Code: https://github.com/Jasper0122/BuildingView
 ---
